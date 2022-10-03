@@ -1,0 +1,93 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 200px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+    </style>
+  
+    <body>
+               
+    <h2></h2>
+    <br>
+    <br>
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+      <center>
+        <h1> Grants Data</h1>
+       <a href=""><h2>50 Grants</h2> </a>
+       <a href=""><h3>30 completed</h3></a>
+      <a href=""><h3>20 In Progress</h3></a>
+      </center>
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Some text..</p>
+      </div>
+      <div class="column" style="background-color:#ccc;">
+        <center>
+          <h1> Activity Details</h1>
+         <a href=""><h2>40 Trainings</h2> </a>
+         <a href=""><h3>20 Workshops</h3></a>
+        <a href=""><h3>10 Meetings</h3></a>
+        </center>
+      </div>
+      
+    </div>
+    <br>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+          <h2>Column 1</h2>
+          <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+          <h2>Organizations</h2>
+          <a href=""><h3>60 cbos</h3> </a>
+          <a href=""><h3>20 Workshops</h3></a>
+          <a href=""><h3>10 Meetings</h3></a>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+          <h2>Column 3</h2>
+          <p>Some text..</p>
+        </div>
+        
+    </div>
+    <br>
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Some text..</p>
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Some text..</p>
+      </div>
+      <div class="column" style="background-color:#ccc;">
+        <h2>Column 3</h2>
+        <p>Some text..</p>
+      </div>
+      </div>
+    
+    </body>
+{% endblock %}
